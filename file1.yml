@@ -1,0 +1,8 @@
+---
+- name: coping files
+  hosts: all
+  tasks:
+    - name: creating copy
+      copy:
+        src: /etc/hosts
+        dest: /tmp/hosts1
